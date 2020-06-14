@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lay_excellent_works_guidelines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_excellent_works_click"
+            android:layout_width="103dp"
+            android:layout_height="73dp"
+            android:background="@mipmap/pic_click_good"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--<ImageView
+            android:layout_width="285dp"
+            android:layout_height="34dp"
+            android:background="@mipmap/pic_guide_good"
+            app:layout_constraintLeft_toLeftOf="@+id/img_excellent_works_click"
+            app:layout_constraintRight_toRightOf="@+id/img_excellent_works_click"
+            app:layout_constraintTop_toBottomOf="@+id/img_excellent_works_click" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lay_same_works_guidelines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_same_works_click"
+            android:layout_width="103dp"
+            android:layout_height="73dp"
+            android:background="@mipmap/pic_click_classmate"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--<ImageView
+            android:layout_width="285dp"
+            android:layout_height="34dp"
+            android:background="@mipmap/pic_guide_classmate"
+            app:layout_constraintRight_toRightOf="@+id/img_same_works_click"
+            app:layout_constraintTop_toBottomOf="@+id/img_same_works_click" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
